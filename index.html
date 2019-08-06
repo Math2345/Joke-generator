@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+
+  form {
+      margin: 100px auto;
+      width: 900px;
+  }
+
+  legend {
+      font-size: 32px;
+      font-weight: bold;
+  }
+
+  label {
+
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+  }
+
+  #submit {
+      padding: 10px 15px;
+      font-size: 18px;
+      font-weight: bold;
+
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .container-result {
+      width: 900px;
+      margin: 0 auto;
+  }
+
+  .error {
+      display: inline-block;
+
+      padding-left: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: red;
+  }
+</style>
+<form id = "form">
+    <fieldset id="fieldSet">
+        <legend>JOKE GENERATOR</legend>
+        <label for="name">Enter your name: </label><input type="text" id="name">
+        <input type="checkbox" id="checkbox"><label for="name">to remember me</label>
+    </fieldset>
+    <p><input id= "submit" type="submit" value="Get a joke"></p>
+</form>
+
+<div class="container-result"></div>
+
+
+
+
+<script src="js/lib/req.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
